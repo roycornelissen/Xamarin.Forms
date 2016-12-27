@@ -177,10 +177,7 @@ namespace Xamarin.Forms.Platform.WinRT
 				LookupRelevantParents();
 				UpdateTitleColor();
 				UpdateNavigationBarBackground();
-
-#if WINDOWS_UWP
 				UpdateToolbarPlacement();
-#endif
 
 				Element.PropertyChanged += OnElementPropertyChanged;
 				((INavigationPageController)Element).PushRequested += OnPushRequested;
